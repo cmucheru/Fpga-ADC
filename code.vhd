@@ -1,5 +1,6 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
+-- creating video processing block
 entity VideoProcessing is
     Port (
         vid_data : in STD_LOGIC_VECTOR (23 downto 0);
@@ -17,6 +18,9 @@ entity VideoProcessing is
         leds: out STD_LOGIC_VECTOR(3 downto 0)
     );
 end VideoProcessing;
+    
+    --creating video processing process
+   
 
 architecture Behavioral of VideoProcessing is
 begin
